@@ -1,0 +1,12 @@
+.filterBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 300px;
+  margin-left: 10px;
+  padding: 20px;
+}
+.myFormInput {
+  width: 200px;
+}

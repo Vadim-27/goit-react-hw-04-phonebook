@@ -1,0 +1,17 @@
+.myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin-left: 10px;
+  padding: 20px;
+  border: blueviolet solid 2px;
+  border-radius: 10px;
+}
+.myFormInput {
+  width: 200px;
+}
+.myFormBtn {
+  width: 100px;
+  border-radius: 5px solid 2px;
+}
