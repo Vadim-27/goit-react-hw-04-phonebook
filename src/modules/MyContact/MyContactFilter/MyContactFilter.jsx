@@ -2,20 +2,20 @@
 import PropTypes from 'prop-types';
 import css from "./myContactFilter.module.css"
 
-const ContactFilter = ({ handleChenge }) => {
-    return (
-      <div className={css.filterBox}>
-        <label htmlFor=""> Find contacts by name</label>
-        <input
-          className={css.myFormInput}
-          type="text"
-          name="filter"
-          onChange={handleChenge}
-          placeholder="Filter contact"
-        />
-      </div>
-    );
-   
+const ContactFilter = ({ value, handleChenge }) => {
+  return (
+    <div className={css.filterBox}>
+      <label htmlFor=""> Find contacts by name</label>
+      <input
+        className={css.myFormInput}
+        type="text"
+        name="filter"
+        value={value}
+        onChange={handleChenge}
+        placeholder="Filter contact"
+      />
+    </div>
+  );
 };
 
 export default ContactFilter;

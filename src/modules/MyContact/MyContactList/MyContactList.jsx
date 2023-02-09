@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const ContactList = ({ contactDelete, contacts }) => {
-  const contact = contacts.map(({ id, name, number }) => (
+const ContactList = ({ contactDelete, items }) => {
+  const contact = items.map(({ id, name, number }) => (
     <li key={id}>
       {name}:{number}
       <button type="button" onClick={() => contactDelete(id)}>
