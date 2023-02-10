@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 import css from "./myContactFilter.module.css"
 
-const ContactFilter = ({ value, handleChenge }) => {
+const ContactFilter = ({  handleChenge }) => {
   return (
     <div className={css.filterBox}>
       <label htmlFor=""> Find contacts by name</label>
@@ -10,7 +10,7 @@ const ContactFilter = ({ value, handleChenge }) => {
         className={css.myFormInput}
         type="text"
         name="filter"
-        value={value}
+       
         onChange={handleChenge}
         placeholder="Filter contact"
       />

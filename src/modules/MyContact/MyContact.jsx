@@ -68,7 +68,7 @@ const MyContact = () => {
       <MyContactForm onSubmit={addContact} />
       <div>
         <h3 className={css.title}>Contact</h3>
-        <ContactFilter value={filter} handleChenge={handleFilter} />
+        <ContactFilter  handleChenge={handleFilter} />
 
         {isContacts && (
           <ContactList contactDelete={contactDelete} items={FilteredContacts} />
